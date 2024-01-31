@@ -12,17 +12,26 @@
   // validate investment
   if ($investment === FALSE) {
     $error_message .= 'Investment must be a valid number.<br>';
+  } else if ( $investment <= 0 ){
+    $error_message .= 'Investment must be a valid number.<br>';
+  } else if ($investment <= 0){
+    $error_message .= 'Investment must be greater than zero.<br>';
   }
-  // TODO include additional error cases from Slide 65 and 66
-  // TESTING!!!
-  // 1. Success (input 3 valid values)
-  // 2. investment is empty/invalid
-  // 3. investment is negative
-  // 4. interest rate is empty/invalid
-  // 5. interest rate is negative
-  // 6. years is empty/invalid
-  // 7. years is negative
-  // 8. years is over 30
+
+  if ($interest_rate === FALSE) {
+    $error_message .= 'interest rate must be a valid number.<br>';
+  } else if ( $interest_rate <= 0 ){
+    $error_message .= 'interest rate must be a valid number.<br>';
+  }
+
+  if ($years === FALSE) {
+    $error_message .= 'Years must be a valid number.<br>';
+  } else if ( $years <= 0 ){
+    $error_message .= 'Years must be a valid number.<br>';
+  } else if ($years <= 0){
+    $error_message .= 'Years must be greater than zero.<br>';
+  }
+
 
   // Slide 67
   if($error_message != '') {
