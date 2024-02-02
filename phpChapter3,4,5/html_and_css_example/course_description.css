@@ -1,0 +1,50 @@
+h1, h2, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:darkgrey;
+}
+
+a[href]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* unvisited */
+a:link{
+    color:black;
+}
+/*highlighted over */
+a:focus,a:hover{
+    color:blanchedalmond;
+}
+/*selected link */
+a:active{
+    color:blueviolet;
+}
+/*page already visited*/
+a:visited{
+    color:blanchedalmond;
+}
+img{
+    float:left;
+    margin-right:5px;
+}
+#first{
+    background-color: blueviolet;
+}
+.details{
+    color: blanchedalmond;
+}
+/* chapter 5 css box model */
+body{
+    border: 3px dotted darkgrey;
+    margin: 15px;
+}
+main{
+    border: 2px solid black;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+}
+h1, h2{
+    padding-left: 15px;
+}
