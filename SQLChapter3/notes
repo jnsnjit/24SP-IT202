@@ -1,0 +1,29 @@
+// what is SQL --> server query library
+imagine a table/spreadsheet with all of the data you want to store
+most tables will have a unique identifer for each row
+rememeber foriegn and primary keys! (keys can only be ints up to 11 integers)
+prices will take up to ten values + two for decimal places
+
+DB Operations:      SQL
+C - CREATE          INSERT 
+R - READ            SELECT
+U - UPDATE
+D - DELETE
+
+SELECT * FROM table-1
+[WHERE selection-criteria]
+[ORDER BY column-1 [ASC|DESC]]
+          ,column-1 [ASC|DESC]]...]
+
+select --> pick
+insert --> create
+where --> if
+order --> order by
+update/delete/set --> will change values in the table (ALWAYS REMEMEBER TO USE A IF WITH THESE)
+
+for database to work --> website needs
+name
+port
+database name
+username
+password
