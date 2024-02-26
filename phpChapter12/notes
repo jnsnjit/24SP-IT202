@@ -1,0 +1,10 @@
+what are cookies and sessions?
+they are not specific to a website, but they are stored in the user browser
+
+4 super global arrays
+
+$_POST
+$_GET
+$_COOKIE
+$_SESSION      --> all can use the filter_input(), they are all 1D arrays
+
