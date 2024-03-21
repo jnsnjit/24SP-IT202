@@ -1,0 +1,56 @@
+two ways to do javascript
+
+external file versus internal
+
+<script></script>
+<noscript></noscript>
+front end development 
+
+FE BE DB
+html 
+css 
+obj orientated programming
+
+basic syntax rules
+case sensitive, camelCasing is appropiate
+comments
+/* 
+//
+*/
+
+data types
+number, String, boolean, null, 
+number can be whole or decimal, language deals with assignment
+let
+var 
+const (static)
+
+console.log("name = " + name) like a print statement, purely for debuging
+++ += + -- -= - ** *= *
+
+language reads on line at a time whilst compiling, error will occur at break point
+
+var versus let
+var -> stored in memory, can be called anywhere in could, but only after declaration will it have a value (null otherwise)
+let -> creates var on its line
+
+floating point issues in javascript
+to fix? use toFixed() (like format in php)
+
+numberIssues.toFixed(2) (returns a string so rewrite back to float to do operations)
+
+string operations
+
+const fname = "Grace";
+const lname = "Hopper";
+
+const name1 = fname + ", " + lname;
+or other way
+const name2 = `${lname}, ${fname}`;
+
+window.alert("This is an alert before you click this page");
+
+const userE = window.prompt("This is a test of the prompt method",100);
+
+Date object (can get time, day,year,month, fun obj to use)
+
