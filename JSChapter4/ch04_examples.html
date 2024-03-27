@@ -1,0 +1,67 @@
+<html>
+    <body>  
+        <h1>JavaScript Chapter 4 Examples</h1>
+        <script>
+            const confirmDelete = confirm("Are you sure you want to delete?");
+            //acts as boolean value
+            if(confirmDelete){
+                //code that deletes code
+            }else{
+                //code that doesnt delete
+            }
+        </script>
+        <!-- Slide 12 -->
+        <h4>Change the color of this first p element.</h4>
+        <p>This is a paragraph element</p>
+        <p id="rate">Change the color of the element with id='rate'</p>
+        <p class="error">This is a message with class='error'</p>
+        <script>
+            // Slide 12
+            const first_p_element = document.querySelector("p");
+            first_p_element.style.color = "green";
+            const rate_element = document.querySelector("#rate");
+            rate_element.style.color = "blue";
+            const error_element = document.querySelector(".error");
+            error_element.style.color = "red";
+
+            //querySelectorAll will select all elements/ids/class chosen
+            //creates a list of values
+            const node_list = document.querySelectorAll("p");
+            for(let i = 0;i <node_list.length;i++){
+                node_list[i].style.animationDelay = 5;
+            }
+            const today = new Date();
+            document.write(today.toDateString());
+            document.write('<br>')
+            document.write(today.getDate());
+            document.write('<br>')
+
+            //how to invoke funct
+            function showYear(){
+                const today = new Date();
+                document.write("<p>The year is " + today.getFullYear() + "</p>");
+            }
+            //call/invoke funct
+            showYear();
+            const calcTax = function(subtotal,taxRate){
+                const tax = subtotal*taxRate;
+                return tax.toFixed(2);
+            }
+            const subtotal = 85;
+            const taxRate = 0.05;
+            const salesTax = calcTax(subtotal,taxRate);
+            document.write("<p>the sales tax is " + salesTax + "</p>")
+
+            const calcTax2 = (subtotal) => (subtotal * 0.074).toFixed(2);
+
+            //differences of let and var, Slide 36, var scope
+            function local(){
+                //declar variable using var
+                for(var i =0;i<5;i++){
+                    console.log("index = " + i);
+                }
+            }
+            local();
+        </script>
+    </body>
+</html>
