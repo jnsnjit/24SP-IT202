@@ -54,3 +54,16 @@ const userE = window.prompt("This is a test of the prompt method",100);
 
 Date object (can get time, day,year,month, fun obj to use)
 
+four main objs in browser 
+window, document, navigator, history
+window --> represents the open browser window
+document --> represents the actual html document 
+navigator --> links and nav
+history --> cookies and such
+
+fe          be          db
+html
+css
+<-js->
+
+
