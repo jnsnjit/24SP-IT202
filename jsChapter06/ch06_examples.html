@@ -1,0 +1,56 @@
+<html> 
+    <body>
+        <span><b>Welcome </b><u>Back</u><i> Sam!</i></span>
+        <script>
+            const spanElement = document.querySelector("span");
+            console.log("span element = " + spanElement);
+            console.log(spanElement);
+
+            const boldElement = spanElement.firstChild;
+            console.log("bold element = " + boldElement);
+            console.log(boldElement);
+
+            const underLinedElement = spanElement.firstChild.nextElementSibling;
+            console.log("underlined element = " + underLinedElement);
+            console.log(underLinedElement);
+
+            const backText = spanElement.firstChild.nextElementSibling.firstChild;
+            console.log("back text = " + backText);
+            console.log(backText);
+
+            console.log(spanElement.firstChild.textContent);
+        </script>
+        <ul id="image_list">
+            <li><img src ="lion.jpg" width="160" height="106" id="imageA"/></li>
+            <li><img src ="tiger.jpg" width="160" height="106" id="imageB"/></li>
+            <li><img src ="lion.jpg" width="160" height="106" id="imageC"/></li>
+        </ul>
+        <script>
+            const list = document.querySelector("#image_list");
+            const items = list.querySelectorAll("li");
+
+            for(let item of items) {
+                console.log(item.firstChild.id);
+                console.log(item.firstChild.src);
+            }
+            const imageCElement = document.querySelector("#imageC");
+            console.log("image c src = " + imageCElement.getAttribute("src"));
+            imageCElement.setAttribute("src","puma.jpg");
+        </script>
+        <!-- embedded CSS-->
+        <style>
+            .blue{
+                color: blue;
+            }
+            .red{
+                color: red;
+            }
+        </style>
+        <h2>Welcome to our website!</h2>
+        <script>
+            const heading2 = document.querySelector("h2");
+            heading2.classList.add("blue");
+            console.log(heading2);
+        </script>
+    </body>
+</html>
