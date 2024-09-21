@@ -15,7 +15,6 @@ if (is_valid_admin_login($email, $password)) {
 
   // redirect logged in user to default page
 
-  echo "<p>You have successfully logged in.</p>";
 
 } else {
 

@@ -17,7 +17,7 @@ $login_message = 'You must login to view this page.';
      <input type="text" name="email" value="">
      <br>
      <label>Password:</label>
-     <input type="password" name="password" value="">
+     <input type="password" name="password" id='password' value="">
      <br>
      <input type="submit" value="Login">
    </form>

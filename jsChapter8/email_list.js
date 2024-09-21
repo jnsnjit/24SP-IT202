@@ -23,7 +23,7 @@ $(document).ready( () =>{
             event.preventDefault();
         }
     });
-
+    
     //handle click on reset button
     $("#reset_button").click( () => {
         //clear text box

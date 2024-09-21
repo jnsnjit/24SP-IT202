@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <script>
+            class Invoice {
+                constructor(subtotal, taxRate){
+                    this.subtotal = subtotal;
+                    this.taxRate = taxRate;
+                }
+                getTotal(){
+                    const salesTax = this.subtotal * this.taxRate;
+                    return this.subtotal + salesTax;
+                }
+            }
+            const invoiceA = new Invoice(200,0.0765);
+            const totalA = invoiceA.getTotal();
+            document.write("Total A: " + totalA);
+            document.write("<br>");
+            // create invoiceB with any vals and using toFixed
+            const invoiceB = new Invoice(300,0.076555);
+            const totalB = invoiceB.getTotal().toFixed(2);
+            document.write("Total B: " + totalB);
+            document.write("<br>");
+
+            class Person{
+                constructor(fname,lname){
+                    this.fname=fname;
+                    this.lname=lname;
+                }
+                get fullName(){
+                    return `${this.fname}, ${this.lname}` + "<br>";
+                }
+            }
+            const grace = new Person("Grace","Hopper");
+            document.write("Name: " + grace.fullName);
+
+            class Employee extends Person{
+                constructor(fname,lname,hireDate){
+                    super(fname,lname);
+                    this.hireDate = hireDate;
+                }
+            }
+            const emp = new Employee("Brad","Pitt",new Date("4/18/2024"));
+            document.write("Name: " + emp.fullName);
+            document.write("Hire Date: " + emp.hireDate);
+
+            const taxDay = new Date("4/15/2024");
+            document.write("Tax Day: " + taxDay.toDateString());
+            
+            Date.prototype.toNumericDateString = function(){
+                const month = this.getMonth() + 1;
+                const day = this.getDate();
+                const year = this.getFulYear();
+                return month + "/" + day + "/" + year;
+            }
+            document.write("<br>");
+            document.write("Tax Day: " + taxDay.toNumericDateString());
+        </script>
+    </body>
+</html>

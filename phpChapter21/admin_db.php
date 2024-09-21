@@ -23,7 +23,6 @@ function is_valid_admin_login($email, $password) {
     } else {
   
       $hash = $row['password'];
-  
       return password_verify($password, $hash);
   
     }
